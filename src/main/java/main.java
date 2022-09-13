@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
-
-
 public class main {
     public static void main(String [] args) {
         Database database = new Database();
@@ -36,7 +34,7 @@ public class main {
                 database.createSuperhero(navn, superheltenavn, superkrafter, menneske, oprindelsesår, styrke);
 
             }   else if (numb == 2) {
-                System.out.println("Din superhelte-liste:\n");
+                System.out.println("Din superhelte-liste:\n" + database.heroes.toString());
             }
 
             else if (numb == 9) {
