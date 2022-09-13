@@ -42,6 +42,8 @@ public class Superhero {
     public double getStyrke() {
         return styrke;
     }
-
+    public String toString () {
+        return navn + " " + superheltenavn + " " + superkraft + " " + menneske + " " + oprindelsesår + " " + styrke;
+    }
 
 }
