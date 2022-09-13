@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Superhero {
     //Attributes
     private String navn;
@@ -40,4 +42,6 @@ public class Superhero {
     public double getStyrke() {
         return styrke;
     }
+
+
 }
