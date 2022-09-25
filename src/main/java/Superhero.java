@@ -17,8 +17,8 @@ public class Superhero {
         this.menneske=menneske;
         this.oprindelsesår=oprindelsesår;
         this.styrke=styrke;
-
     }
+
     //Gettere
     public String getNavn() {
         return navn;
@@ -42,8 +42,29 @@ public class Superhero {
     public double getStyrke() {
         return styrke;
     }
-    public String toString () {
-        return navn + " " + superheltenavn + " " + superkraft + " " + menneske + " " + oprindelsesår + " " + styrke;
+
+    //Setters
+    public void setNavn(String navn){
+        this.navn = navn;
+    }
+    public void setSuperheltenavn(String superheltenavn){
+        this.superheltenavn = superheltenavn;
+    }
+    public void setSuperkraft(String superkraft){
+        this.superkraft= superkraft;
+    }
+    public void setMenneske(boolean menneske){
+        this.menneske = menneske;
+    }
+    public void setOprindelsesår (double oprindelsesår){
+        this.oprindelsesår=oprindelsesår;
+    }
+    public void setStyrke (double styrke){
+        this.styrke = styrke;
     }
 
+    @Override
+    public String toString() {
+        return navn + " " +  superheltenavn + " " + superkraft + " " + isMenneske() + " " + oprindelsesår + " " + styrke;
+    }
 }

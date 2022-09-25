@@ -11,8 +11,7 @@ public class main {
 
         //Menu
         do {
-
-            System.out.println("1. Opret ny superhelt \n2. Se liste af superhelte\n9. Afslut programmet");
+            System.out.println("1. Opret ny superhelt \n2. Se liste af superhelte\n3. Søg efter superhelt \n9. Afslut programmet");
             numb= scan.nextInt();
             scan.nextLine();
 
@@ -36,6 +35,25 @@ public class main {
             }   else if (numb == 2) {
                 System.out.println("Din superhelte-liste:\n" + database.heroes.toString());
             }
+
+                if(numb == 3) {
+                    System.out.println("Indtast et søgeord: ");
+                    String searchTerm = scan.nextLine();
+                    ArrayList<Superhero> searchResults = new ArrayList<>();
+
+                    for (Superhero search : searchResults) {
+                        if (search.getSuperheltenavn().equalsIgnoreCase(searchTerm)){
+                            searchResults.add(search);
+                        }
+                    }
+                    if (searchResults.isEmpty())
+                        for (Superhero search : searchResults) {
+                            System.out.println(search);
+                        }
+                        else
+                            System.out.println("Flere superhelte fundet:");
+
+                    }
 
             else if (numb == 9) {
                 System.out.println("Hav en god dag");
