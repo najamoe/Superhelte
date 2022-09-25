@@ -17,7 +17,9 @@ public class Database {
     public ArrayList<Superhero> getHeroes() {
         return heroes;
     }
+    public void searchSuperhero(String searchTerm){
 
+    }
 public ArrayList<Superhero> getSearchResults(){
         return searchResults;
 }
